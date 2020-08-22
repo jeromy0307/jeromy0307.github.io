@@ -3,4 +3,4 @@
 ## 本站纯做学习交流使用，请不要进行其他违法活动
 ## 资源来自https://github.com/linqingping/M3U8-player 如需删除请通知：domain@網址.tk
 ## 播放器地址：https://linqingping.github.io/M3U8-player/
-![Image text](https://github.com/linqingping/M3U8-player/blob/master/QR.png)
+![Image text](https://g.jrmy.tk/m3u8/web/QR.png)
