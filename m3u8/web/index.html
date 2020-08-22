@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-tw">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
-    <title>M3U8在线播放器</title>
+    <title>M3U8在線播放器（繁體版）</title>
     <link rel="stylesheet" href="./DPlayer.min.css">
     <style> 
         input[type=text] {
@@ -99,29 +99,29 @@
        
 </head>
 <body id="grad1"> 
-<h1>M3U8在线播放器</h1>
+<h1>M3U8在線播放器（繁體版）</h1>
 <div id="dplayer"></div>
 <div style="left: 50%;text-align: center;">
 <div class="dropdown">
-<button class="dropbtn">国内卫视直播源</button>
+<button class="dropbtn">大陸衛視直播源</button>
 <div class="dropdown-content">
-<a href="#" style="display: inline-block;" onclick='changelive("http://ivi.bupt.edu.cn/hls/hunanhd.m3u8","湖南卫视HD");'>湖南卫视HD</a>
-<a href="#" style="display: inline-block;" onclick='changelive("http://ivi.bupt.edu.cn/hls/dfhd.m3u8","东方卫视HD");'>东方卫视HD</a>
-<a href="#" style="display: inline-block;" onclick='changelive("http://ivi.bupt.edu.cn/hls/jshd.m3u8","江苏卫视HD");'>江苏卫视HD</a>
-<a href="#" style="display: inline-block;" onclick='changelive("http://ivi.bupt.edu.cn/hls/zjhd.m3u8","浙江卫视HD");'>浙江卫视HD</a>
-<a href="#" style="display: inline-block;" onclick='changelive("http://ivi.bupt.edu.cn/hls/zjtv.m3u8","浙江卫视");'>浙江卫视</a>
-<a href="#" style="display: inline-block;" onclick='changelive("http://ivi.bupt.edu.cn/hls/btv1hd.m3u8","北京卫视HD");'>北京卫视HD</a>
-<a href="#" style="display: inline-block;" onclick='changelive("http://ivi.bupt.edu.cn/hls/ahhd.m3u8","安徽卫视HD");'>安徽卫视HD</a>
-<a href="#" style="display: inline-block;" onclick='changelive("http://ivi.bupt.edu.cn/hls/hljhd.m3u8","黑龙江卫视HD");'>黑龙江卫视HD</a>
-<a href="#" style="display: inline-block;" onclick='changelive("http://ivi.bupt.edu.cn/hls/szhd.m3u8","深圳卫视HD");'>深圳卫视HD</a>
-<a href="#" style="display: inline-block;" onclick='changelive("http://ivi.bupt.edu.cn/hls/gdhd.m3u","广东卫视HD");'>广东卫视HD</a>
-<a href="#" style="display: inline-block;" onclick='changelive("http://ivi.bupt.edu.cn/hls/tjhd.m3u8","天津卫视HD");'>天津卫视HD</a>
-<a href="https://github.com/linqingping/M3U8-player/blob/master/sources.m3u8" style="display: inline-block;">其他直播源，可复制播放</a>
+<a href="#" style="display: inline-block;" onclick='changelive("http://ivi.bupt.edu.cn/hls/hunanhd.m3u8","湖南卫视HD");'>湖南衛視HD</a>
+<a href="#" style="display: inline-block;" onclick='changelive("http://ivi.bupt.edu.cn/hls/dfhd.m3u8","东方卫视HD");'>東方衛視HD</a>
+<a href="#" style="display: inline-block;" onclick='changelive("http://ivi.bupt.edu.cn/hls/jshd.m3u8","江苏卫视HD");'>江蘇衛視HD</a>
+<a href="#" style="display: inline-block;" onclick='changelive("http://ivi.bupt.edu.cn/hls/zjhd.m3u8","浙江卫视HD");'>浙江衛視HD</a>
+<a href="#" style="display: inline-block;" onclick='changelive("http://ivi.bupt.edu.cn/hls/zjtv.m3u8","浙江卫视");'>浙江衛視</a>
+<a href="#" style="display: inline-block;" onclick='changelive("http://ivi.bupt.edu.cn/hls/btv1hd.m3u8","北京卫视HD");'>北京衛視HD</a>
+<a href="#" style="display: inline-block;" onclick='changelive("http://ivi.bupt.edu.cn/hls/ahhd.m3u8","安徽卫视HD");'>安徽衛視HD</a>
+<a href="#" style="display: inline-block;" onclick='changelive("http://ivi.bupt.edu.cn/hls/hljhd.m3u8","黑龙江卫视HD");'>黑龍江衛視HD</a>
+<a href="#" style="display: inline-block;" onclick='changelive("http://ivi.bupt.edu.cn/hls/szhd.m3u8","深圳卫视HD");'>深圳衛視HD</a>
+<a href="#" style="display: inline-block;" onclick='changelive("http://ivi.bupt.edu.cn/hls/gdhd.m3u","广东卫视HD");'>廣東衛視HD</a>
+<a href="#" style="display: inline-block;" onclick='changelive("http://ivi.bupt.edu.cn/hls/tjhd.m3u8","天津卫视HD");'>天津衛視HD</a>
+<a href="https://github.com/linqingping/M3U8-player/blob/master/sources.m3u8" style="display: inline-block;">其他直播源，可複製播放</a>
 </div>
 </div>
-<input id="src" type="text" placeholder="请输入要播放的m3u8链接...如:xxx.m3u8" >
+<input id="src" type="text" placeholder="請輸入要播放的m3u8連接...如:xxx.m3u8" >
 <button class="button button2" type="button" onclick="myFunction()">播放</button>
-<p style="color: black;font-size:1em;">本站支持电视m3u8的直播<br/>本网站只做学习交流，请不要进行任何违法操作，非法进行其他操作与本人无关！<br/>联系QQ:1959132391</p>
+<p style="color: black;font-size:1em;">本站支持電視m3u8的直播<br/>本網站只做學習交流，請不要進行任何違法操作，非法進行其他操作與本人無關！<br/>聯繫email:domain@網址.tk<br/>QQ:2873382823</p>
 <p id="demo" style="color: forestgreen;font-size:2.5em;"></p>
 </div>
 </body>
@@ -136,7 +136,7 @@
         document.getElementById("src").value=value
         url = document.getElementById("src").value;
 	document.getElementById("src").value=""
-        document.getElementById("demo").innerHTML = "播放加载时间有可能慢些请耐心等待，长时间未播放可能链接地址不可用<br/>当前播放："+channel;
+        document.getElementById("demo").innerHTML = "播放加載時間有可能慢些請耐心等待，長時間未播放可能連接地址不可用<br/>當前播放："+channel;
         const dp = new DPlayer({
         container: document.getElementById('dplayer'),
         autoplay: true,
@@ -155,7 +155,7 @@
     }
     function myFunction() {
     url = document.getElementById("src").value;
-    document.getElementById("demo").innerHTML = "播放加载时间有可能慢些请耐心等待，长时间未播放可能链接地址不可用<br/>当前播放："+url;
+    document.getElementById("demo").innerHTML = "播放加載時間有可能慢些請耐心等待，長時間未播放可能連接地址不可用<br/>當前播放："+url;
     const dp = new DPlayer({
     container: document.getElementById('dplayer'),
 	autoplay: true,
